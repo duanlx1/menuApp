@@ -1,0 +1,19 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Add Comment</h1>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="addComment()">
+      <ionic-ratings ratingsobj='ratingsObject'></ionic-ratings>
+      <label class="item item-input">
+        <textarea placeholder="Add comment" ng-model="dish.comments.comment"></textarea>
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Name" ng-model="dish.comments.author"/>
+      </label>
+      <button class="button button-full button-positive" type="submit">
+        Submit
+      </button>
+    </form>
+  </ion-content>
+</ion-modal-view>
